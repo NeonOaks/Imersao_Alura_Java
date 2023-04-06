@@ -14,7 +14,7 @@ public class App {
         // Conexão http
         // String url = "https://imdb-api.com/en/API/Top250Movies/k_3fw06h3k";
         String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
-        URI endereco = URI.create(url);
+        URI endereco = URI.create(url);  // URI HIERARQUICA
         var client = HttpClient.newHttpClient();
         HttpRequest request = newBuilder(endereco).GET().build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
