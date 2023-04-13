@@ -18,8 +18,8 @@ public class App {
         String url = "https://api.nasa.gov/planetary/apod?api_key=tpaEehAuXabi8iL8LOhHr1rnZaaOcbRNbFoGF2Wh&start_date=2022-06-12&end_date=2022-06-14";
         ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
-        // var http = new ClienteHttp();
-        String json = http.buscaDados(url);sfsdfsdfsdfsdfsdfs
+        var http = new ClienteHttp();
+        String json = http.buscaDados(url);
 
        
         List<Conteudo> conteudos = extrator.extratorConteudos(json);
